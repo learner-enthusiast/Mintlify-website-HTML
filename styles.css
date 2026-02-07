@@ -732,6 +732,10 @@ backdrop-filter: blur(4px);
     border-radius: 12px;
     overflow: hidden;
     transition: transform 0.2s;
+    min-width: 400px;
+    min-height:400px ;
+    max-height: 400px;
+    max-width: 400px;
 }
 
 .carousel-card:hover {
@@ -759,19 +763,21 @@ backdrop-filter: blur(4px);
     line-height: 1.6;
     padding: 20px;
     padding-bottom: 8px;
-    min-height: 80px;
 }
 
 .card-link {
-    display: block;
+    display: flex;
     font-size: 14px;
     color: #fff;
     text-decoration: none;
     padding: 0 20px 20px;
+    gap: 4px;
+    align-items: center;
+    justify-content: flex-start; /* or center if you want it centered */
 }
 
 .card-link:hover {
-    text-decoration: underline;
+    color:#18E299
 }
 
 /* Carousel slide positions - adjusted for overflow effect */
@@ -862,7 +868,7 @@ backdrop-filter: blur(4px);
     }
 }
 
-/* ...existing code... */
+
 
 .container-6 {
     background-color: lab(2.42579 -0.165291 -0.470081);
@@ -1002,11 +1008,13 @@ backdrop-filter: blur(4px);
         height: 1px;
     }
 }
-/* ...existing code... */
+
 
 .footer {
     background-color:  lab(2.42579 -0.165291 -0.470081);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 80px;
+    
 }
 
 .footer-container {
@@ -1015,6 +1023,7 @@ backdrop-filter: blur(4px);
     border-left: 1px solid rgba(255, 255, 255, 0.1);
     border-right: 1px solid rgba(255, 255, 255, 0.1);
     padding: 20px;
+    
 }
 
 .footer-top {
@@ -1022,6 +1031,7 @@ backdrop-filter: blur(4px);
     justify-content: space-between;
     align-items: center;
     padding-bottom: 40px;
+    padding-top: 40px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
